@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useNavigate, } from "react-router-dom";
 import "./experiencialaboral.css";
 
-export default function Formacion() {
+export default function ExperienciaLaboral() {
     return (
-        <div className="w-full min-h-screen formacion_container">
+        <div className="w-full min-h-screen formacion_container py-8 flex flex-col">
             <div className="m-5">
                 <div className="text-6xl font-bold titulo_formacion text-center">
                     EXPERIENCIA LABORAL
@@ -32,9 +32,11 @@ export default function Formacion() {
                             <div className="text-lg font-black">Atento España Teleservicios (Toledo)</div>
                             <div className="text-sm">Contact center</div>
                             <p className="descripcion">
-                                Teloperador: funciones de atención al cliente, captación y venta cruzada, gestión y seguimiento de reclamaciones, gestión y seguimiento de averías, baja de líneas telefónicas, funciones de back office.<hr />
+                                Quality/Formador: auditorías de llamadas, feedback con teleoperadores, revisión y corrección de operativa, formaciones individuales/grupales de nuevos productos y servicios o reciclajes. Reportes de análisis de calidad y seguimiento de formaciones.<hr />
                                 Coordinador: gestión de grupo de teleoperadores, seguimiento individualizado de items de calidad, TMO, ausencias, ventas formuladas y tramitadas, reportes de ventas, reuniones con resto de coordinadores y gerencia. <hr />
-                                Quality/Formador: auditorías de llamadas, feedback con teleoperadores, revisión y corrección de operativa, formaciones individuales/grupales de nuevos productos y servicios o reciclajes. Reportes de análisis de calidad y seguimiento de formaciones.
+                                Teloperador: funciones de atención al cliente, captación y venta cruzada, gestión y seguimiento de reclamaciones, gestión y seguimiento de averías, baja de líneas telefónicas, funciones de back office.
+
+
                             </p>
                         </div>
                         <hr />

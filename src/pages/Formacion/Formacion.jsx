@@ -4,14 +4,14 @@ import "./formacion.css";
 
 export default function Formacion() {
     return (
-        <div className="w-full min-h-screen formacion_container">
+        <div className="w-full min-h-screen formacion_container py-8 flex flex-col">
             <div className="m-5">
                 <div className="text-6xl font-bold titulo_formacion text-center">
                     FORMACIÓN / CURSOS
                 </div>
             </div>
 
-            <main>
+            <main >
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <li>
                         <div className="timeline-middle">

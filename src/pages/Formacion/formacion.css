@@ -9,6 +9,7 @@
 
 .formacion_container {
   background-color: #ffeedb;
+  padding-right: 2%;
 }
 
 .titulo_formacion {
@@ -25,4 +26,10 @@ hr {
   font-size: 1.5rem;
   line-height: 1.1;
   text-align: justify;
+}
+
+@media (max-width: 576px) {
+  .formacion_container {
+    padding-right: 7%;
+  }
 }
