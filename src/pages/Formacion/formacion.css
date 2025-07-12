@@ -1,5 +1,28 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'Computer-says-no';
+  src: url('../../assets/computer-says-no.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .formacion_container {
   background-color: #ffeedb;
+}
+
+.titulo_formacion {
+  color: #ba3b46;
+  font-family: 'Computer-says-no', sans-serif;
+}
+
+hr {
+  background-color: #61c9a8;
+}
+
+.descripcion {
+  font-family: 'Computer-says-no', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-align: justify;
 }
