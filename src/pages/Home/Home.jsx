@@ -48,7 +48,7 @@ export default function Home() {
 
                             <button
                                 className="bubble"
-                                onClick={() => navigate("/formacion")}
+                                onClick={() => navigate("/experiencialaboral")}
                                 style={{
                                     display: 'flex',
                                     flexDirection: 'column',

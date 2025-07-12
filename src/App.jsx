@@ -4,6 +4,7 @@ import Home from './pages/Home/Home'
 import './App.css'
 import { Footer } from './components/Footer/Footer';
 import Formacion from './pages/Formacion/Formacion';
+import ExperienciaLaboral from './pages/ExperienciaLaboral/ExperienciaLaboral'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/formacionycursos" element={<Formacion />} />
+            <Route path="/experiencialaboral" element={<ExperienciaLaboral />} />
           </Routes>
         </main>
         <Footer />
