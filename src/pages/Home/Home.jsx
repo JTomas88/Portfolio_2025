@@ -32,7 +32,7 @@ export default function Home() {
                         <div className="flex flex-wrap justify-center items-center gap-10 mt-8 mb-12 overflow-x-auto botones-wrapper">
 
                             <button
-                                className="bubble"
+                                className="bubble_home"
                                 onClick={() => navigate("/formacionycursos")}
                                 style={{
                                     display: 'flex',
@@ -41,13 +41,18 @@ export default function Home() {
                                     textAlign: 'center'
                                 }}
                             >
-                                <span>Formación</span>
-                                <span style={{ fontWeight: 'bold', margin: '0.1rem 0' }}>y</span>
-                                <span>Cursos</span>
+
+                                <div className="verde_oscuro"></div>
+                                <div className="verde_mas_claro"></div>
+                                {/* <div className="verde_blanco"></div> */}
+                                <div className="highlight" />
+                                <div className="text"></div>
+
+
                             </button>
 
                             <button
-                                className="bubble"
+                                className="bubble_home"
                                 onClick={() => navigate("/experiencialaboral")}
                                 style={{
                                     display: 'flex',
@@ -60,7 +65,7 @@ export default function Home() {
                             </button>
 
                             <button
-                                className="bubble"
+                                className="bubble_home"
                                 onClick={() => navigate("/proyectos")}
                                 style={{
                                     display: 'flex',
@@ -73,7 +78,7 @@ export default function Home() {
                             </button>
 
                             <button
-                                className="bubble"
+                                className="bubble_home"
                                 onClick={() => navigate("/formacion")}
                                 style={{
                                     display: 'flex',
@@ -85,21 +90,7 @@ export default function Home() {
                                 Tecnologías
                             </button>
 
-                            {/* <div className="buble">
-                                <button type="button" className="botones">
-                                    Experiencia Laboral
-                                </button>
-                            </div>
-                            <div className="buble">
-                                <button type="button" className="botones">
-                                    Proyectos
-                                </button>
-                            </div>
-                            <div className="bubble">
-                                <button type="button" className="botones">
-                                    Tecnologías
-                                </button>
-                            </div> */}
+
                         </div>
 
 
