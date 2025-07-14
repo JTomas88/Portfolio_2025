@@ -30,9 +30,9 @@ export default function Formacion() {
                         </div>
                         <div className="timeline-start mb-10 md:text-end">
                             <time className="font-mono italic">2025 (Actualmente)</time>
-                            <div className="text-lg font-black">Curso: Angular: de cero a experto</div>
+                            <div className="text-lg font-black">Curso: Ángular: de cero a experto</div>
                             <div className="text-sm">Udemy</div>
-                            <p className="descripcion">
+                            <p className="descripcion_formacion">
                                 Bases de TypeScript, componentes, interceptores, servicios, pipes, rutas, lazyload, SPA, tailwind, signals, formularios reactivos, mapas, carga de archivos y despliegues.
                             </p>
                         </div>
@@ -58,7 +58,7 @@ export default function Formacion() {
                             <time className="font-mono italic">Febrero 2025</time>
                             <div className="text-lg font-black">Curso: Introducción al desarrollo web: HTML y CSS</div>
                             <div className="text-sm">Google Digital Academy</div>
-                            <p className="descripcion">
+                            <p className="descripcion_formacion">
                                 Historia de la web, cómo funciona la web, como se escribe una página web, como se publica un sitio web, escritura de páginas web bien estructuradas, presentación de una página web, elemento de una página web, maquetación, posicionamiento SEO,
                             </p>
                         </div>
@@ -109,7 +109,7 @@ export default function Formacion() {
                             <time className="font-mono italic">Septiembre 2024</time>
                             <div className="text-lg font-black">Bootcamp: FullStack Developer</div>
                             <div className="text-sm">4Geeks Academy</div>
-                            <p className="descripcion">
+                            <p className="descripcion_formacion">
                                 HTML, CSS, Bootstrap, Formularios de HTML, Github, JavaScript, estándares y alineamientos de código, legibilidad, DOM, React, hooks de React, REST API, fetch, Python, programación orientada a objetos, base de datos SQLAlchemy, autenticación con JWT.
                                 Proyecto final: Carefy (elegido como el mejor proyecto dentro de su cohorte.)
                             </p>
@@ -136,7 +136,7 @@ export default function Formacion() {
                             <time className="font-mono italic">Marzo 2024</time>
                             <div className="text-lg font-black">Curso: Programación profesional desde 0</div>
                             <div className="text-sm">Udemy</div>
-                            <p className="descripcion">
+                            <p className="descripcion_formacion">
                                 Aprendizaje con <strong>Pascal</strong>: entrada y salida estandar, selección, repetición iterativa, arreglos,
                                 funciones, enumerados y registrso, unidades y proyectos, archivos, memoria dinámica con punteros, programación orientada a objetos, interfaces gráficas de usuarios, bases de datos SQL.
                                 Aprendizaje con <strong>C++, Java y JavaScript</strong>: entrada y salida estandar, selección, repetición iterativa, arreglos,
@@ -166,7 +166,7 @@ export default function Formacion() {
                             <time className="font-mono italic">2007</time>
                             <div className="text-lg font-black">Curso: Excel Avanzado</div>
                             <div className="text-sm">Plataforma e-learning</div>
-                            <p className="descripcion">
+                            <p className="descripcion_formacion">
                                 Aprendizaje y ejercicios sobre: Rango,s inserción de objetos, bases de datos, formularios, vistas, estructuras de control, análisis de datos, plantillas, macros y obtención de datos externos.
                             </p>
                         </div>
@@ -192,7 +192,7 @@ export default function Formacion() {
                             <time className="font-mono italic">Junio 2010</time>
                             <div className="text-lg font-black">Diplomatura: Trabajo Social</div>
                             <div className="text-sm">Universidad Complutense de Madrid</div>
-                            <p className="descripcion">
+                            <p className="descripcion_formacion">
                                 Estudio y aplicación de métodos para intervenir en problemáticas sociales, promover el bienestar y la justicia social, y fortalecer el desarrollo humano y comunitario. Forma profesionales capaces de diagnosticar, planificar y ejecutar acciones que mejoren las condiciones de vida de individuos, grupos y comunidades.
                                 Prácticas de carrera en sector de inmigración y asilados.
                             </p>

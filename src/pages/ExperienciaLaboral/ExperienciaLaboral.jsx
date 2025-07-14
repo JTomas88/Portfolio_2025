@@ -4,9 +4,9 @@ import "./experiencialaboral.css";
 
 export default function ExperienciaLaboral() {
     return (
-        <div className="w-full min-h-screen formacion_container py-8 flex flex-col">
+        <div className="w-full min-h-screen experiencia_container py-8 flex flex-col">
             <div className="m-5">
-                <div className="text-6xl font-bold titulo_formacion text-center">
+                <div className="text-6xl font-bold titulo_experiencia text-center">
                     EXPERIENCIA LABORAL
                 </div>
             </div>
@@ -31,7 +31,7 @@ export default function ExperienciaLaboral() {
                             <time className="font-mono italic">08/2009 - 12/2024</time>
                             <div className="text-lg font-black">Atento España Teleservicios (Toledo)</div>
                             <div className="text-sm">Contact center</div>
-                            <p className="descripcion">
+                            <p className="descripcion_experiencia">
                                 Quality/Formador: auditorías de llamadas, feedback con teleoperadores, revisión y corrección de operativa, formaciones individuales/grupales de nuevos productos y servicios o reciclajes. Reportes de análisis de calidad y seguimiento de formaciones.<hr />
                                 Coordinador: gestión de grupo de teleoperadores, seguimiento individualizado de items de calidad, TMO, ausencias, ventas formuladas y tramitadas, reportes de ventas, reuniones con resto de coordinadores y gerencia. <hr />
                                 Teloperador: funciones de atención al cliente, captación y venta cruzada, gestión y seguimiento de reclamaciones, gestión y seguimiento de averías, baja de líneas telefónicas, funciones de back office.

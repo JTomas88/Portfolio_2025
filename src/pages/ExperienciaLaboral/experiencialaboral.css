@@ -1,0 +1,16 @@
+.experiencia_container {
+  background-color: #ffeedb;
+  padding-right: 2%;
+}
+
+.titulo_experiencia {
+  color: #ba3b46;
+  font-family: 'Computer-says-no', sans-serif;
+}
+
+.descripcion_experiencia {
+  font-family: 'Computer-says-no', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-align: justify;
+}
