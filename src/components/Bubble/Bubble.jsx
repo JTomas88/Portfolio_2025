@@ -60,7 +60,7 @@ export default function Bubble({ id, nombre, descripcion, fecha_inicio, fecha_fi
                     <div className="purple"></div>
                     <div className="pink"></div>
                     <div className="highlight" />
-                    <div className="text">{nombre}</div>
+                    <div className="text static">{nombre}</div>
                 </button>
             )}
 

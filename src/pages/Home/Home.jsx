@@ -32,27 +32,18 @@ export default function Home() {
                         <div className="flex flex-wrap justify-center items-center gap-10 mt-8 mb-12 overflow-x-auto botones-wrapper">
 
                             <button
-                                className="bubble_home"
+                                className="bubble_custom"
                                 onClick={() => navigate("/formacionycursos")}
-                                style={{
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    alignItems: 'center',
-                                    textAlign: 'center'
-                                }}
                             >
-
-                                <div className="verde_oscuro"></div>
-                                <div className="verde_mas_claro"></div>
-                                {/* <div className="verde_blanco"></div> */}
-                                <div className="highlight" />
-                                <div className="text"></div>
-
-
+                                <div className="blue_custom"></div>
+                                <div className="purple_custom"></div>
+                                <div className="pink_custom"></div>
+                                <div className="highlight_custom" />
+                                <div className="text_custom static_custom">Formación/Cursos</div>
                             </button>
 
                             <button
-                                className="bubble_home"
+                                className="bubble_custom"
                                 onClick={() => navigate("/experiencialaboral")}
                                 style={{
                                     display: 'flex',
