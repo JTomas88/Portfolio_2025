@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import { useNavigate, } from "react-router-dom";
 import fotoPerfil from '../../assets/fotoPerfil.png'
 import "./home.css";
+import Bubble_Home from '../../components/Bubble_Home/Bubble_Home'
 
 export default function Home() {
     const navigate = useNavigate();
@@ -69,30 +70,12 @@ export default function Home() {
                 </div>
 
             </div>
-            <div className="relative inline-block">
+            <div className="flex flex-wrap justify-center items-center gap-30 mt-10">
 
-                <button
-                    ref={bubbleRef}
-                    className="bubble_custom"
-                    onClick={() => popBubble('proyectos')}
-                >
-                    <div className="blue_custom"></div>
-                    <div className="purple_custom"></div>
-                    <div className="pink_custom"></div>
-                    <div className="highlight_custom" />
-                    <div className="text_custom static_custom">Proyectos</div>
-                </button>
-                <div
-                    className="container_custom"
-                    ref={splashRef}
-                    style={{ display: "none" }}
-                >
-                    {Array.from({ length: 6 }).map((_, idx) => (
-                        <div key={idx} className="splash_custom">
-                            <div className="tail_custom"><div className="tail_custom" /></div>
-                        </div>
-                    ))}
-                </div>
+                <Bubble_Home text='Formación/Cursos' route="formacionycursos" />
+                <Bubble_Home text='Experiencia laboral' route="experiencialaboral" />
+                <Bubble_Home text='Proyectos' route="proyectos" />
+                <Bubble_Home text='Tecnologías' route="tecnologias" />
             </div>
         </div>
     );

@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
 import { useNavigate, } from "react-router-dom";
 import "./proyectos.css";
-import Bubble from "../../components/Bubble/Bubble";
+import Bubble from "../../components/Bubble_Proyectos/Bubble_Proyectos";
+import Bubble_Proyectos from "../../components/Bubble_Proyectos/Bubble_Proyectos";
 
 export default function Proyectos() {
 
@@ -28,7 +29,7 @@ export default function Proyectos() {
             {/* The button to open modal */}
             <div className="d-flex flex-wrap justify-content-center gap-4">
                 {proyectosRealizados.map((proyecto, idx) => (
-                    <Bubble
+                    <Bubble_Proyectos
                         key={idx}
                         id={idx}
                         nombre={proyecto.nombre}

@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useNavigate, } from "react-router-dom";
-import "./bubble.css";
+import "./bubble_proyectos.css";
 
-export default function Bubble({ id, nombre, descripcion, fecha_inicio, fecha_fin, tecnologias, media }) {
+export default function Bubble_Proyectos({ id, nombre, descripcion, fecha_inicio, fecha_fin, tecnologias, media }) {
 
     const [isPopped, setIsPopped] = useState(false);
     const [showBubble, setShowBubble] = useState(true);
