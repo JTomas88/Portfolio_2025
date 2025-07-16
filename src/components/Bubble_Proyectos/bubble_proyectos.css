@@ -15,22 +15,23 @@
   align-items: center;
   font-size: 34px;
   margin: auto;
-  background-color: #b141b9;
-  height: 250px;
-  width: 250px;
+  background-color: #0db34c;
+  height: 180px;
+  width: 180px;
   opacity: 80%;
   animation: wobble 4s linear 1s infinite alternate;
-  box-shadow: 0px 0px 12px 0px #6aebe2aa;
+  box-shadow: 0px 0px 5px 0px #1d6d68aa;
   border: none;
   border-radius: 44% 52% 44% 50%;
   transition: all 0.3s;
+  overflow: hidden;
 }
 
 .bubble:hover {
-  height: 275px;
-  width: 275px;
+  height: 200px;
+  width: 200px;
   transition: all 0.3s;
-  box-shadow: 0px 0px 40px 2px #6aebe2ee;
+  box-shadow: 0px 0px 15px 2px #4cd66a;
   font-size: 39px;
 }
 
@@ -38,7 +39,7 @@
   height: 225px;
   width: 225px;
   transition: all 0.2s;
-  box-shadow: 0px 0px 6px 0px #6aebe2aa;
+  box-shadow: 0px 0px 6px 0px #fa0000aa;
   font-size: 30px;
 }
 
@@ -63,10 +64,10 @@
   height: fit-content;
   width: 100%;
   z-index: 6;
-  font-family: 'Sniglet';
-  font-weight: 800;
-  color: white;
+  font-family: 'Computer-says-no', sans-serif;
+  color: black;
   text-align: center;
+  font-size: 25px;
   animation: pulse 4s linear 1s infinite alternate;
 }
 
@@ -74,12 +75,7 @@
   position: absolute;
   top: 1px;
   left: -1px;
-  background-image: linear-gradient(
-    225deg,
-    #83f2b4 0%,
-    #6fa7e1 60%,
-    #e175e5 100%
-  );
+  background-image: linear-gradient(299deg, #a8e6d8 10%, #61c9a8 80%);
   height: 100%;
   width: 100%;
   z-index: 3;
@@ -91,7 +87,7 @@
   position: absolute;
   top: 2px;
   left: -3px;
-  background-color: #6aebe2;
+  background-color: #a7aa0a;
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -103,7 +99,7 @@
   position: absolute;
   top: 3px;
   left: 1px;
-  background-color: #e175e5;
+  background-color: #d6faf2;
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -118,7 +114,7 @@
   width: 250px;
   height: 250px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .splash {
@@ -146,6 +142,10 @@
   border-radius: 50%;
   z-index: 0;
   border-top: 1px solid #ffffffcc;
+}
+
+.static {
+  animation: none !important;
 }
 
 .splash:nth-child(1) {
