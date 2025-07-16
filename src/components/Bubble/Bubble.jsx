@@ -10,9 +10,6 @@ export default function Bubble({ id, nombre, descripcion, fecha_inicio, fecha_fi
     const modalId = `exampleModal-${id}`;
     const modalRef = useRef(null);
     const [showModal, setShowModal] = useState(false);
-
-
-
     const splashRef = useRef(null);
     const bubbleRef = useRef(null);
 
