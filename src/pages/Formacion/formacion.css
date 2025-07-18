@@ -27,6 +27,12 @@ hr {
   background-color: #61c9a8;
 }
 
+.titulacion {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
 .descripcion_formacion {
   font-family: 'Computer-says-no', sans-serif;
   font-size: 1.5rem;
@@ -34,8 +40,94 @@ hr {
   text-align: justify;
 }
 
+.boton_acordeon_derecha::after {
+  position: absolute;
+  top: 50%; /* posición vertical base */
+  transform: translateY(-50%);
+  right: 1rem; /* o lo que necesites */
+}
+
+/* Ajuste fino si quieres alinear exactamente con el segundo span */
+#alinear-flecha {
+  position: relative;
+}
+
+.head_acordeon {
+  display: flex;
+  flex-direction: column;
+  text-align: unset;
+  border: none;
+  background-color: transparent;
+}
+
+.boton_acordeon_derecha:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.accordion-item {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.accordion-body {
+  background-color: transparent !important;
+  border: none !important;
+  padding-left: 0 !important;
+}
+
+.boton_acordeon_derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding-left: 0 !important;
+  position: relative;
+
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+
+.boton_acordeon_izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding-left: 0 !important;
+  position: relative;
+
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1rem;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+
 @media (max-width: 576px) {
   .formacion_container {
     padding-right: 7%;
+  }
+}
+
+@media (min-width: 0px) {
+  .boton_acordeon_derecha::after {
+    position: relative;
+    top: 44%;
+    transform: translateY(-42%);
   }
 }

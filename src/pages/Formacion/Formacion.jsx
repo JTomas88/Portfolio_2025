@@ -4,6 +4,20 @@ import "./formacion.css";
 import Navbar from "../../components/Navbar/Navbar";
 
 export default function Formacion() {
+    const [mostrandoContenido, setMostrandoContenido] = useState(false)
+
+
+    const mostrandoAcordeon = () => {
+        if (mostrandoContenido === false) {
+            setMostrandoContenido(true)
+        } else {
+            setMostrandoContenido(false)
+        }
+    }
+
+
+
+
     return (
         <div>
             <div className="cajon_navbar">
@@ -11,7 +25,7 @@ export default function Formacion() {
             </div>
 
             <div className="w-full min-h-screen formacion_container py-8 flex flex-col">
-                <div className="m-5">
+                <div className="m-3">
                     <div className="text-6xl font-bold titulo_formacion text-center">
                         FORMACIÓN / CURSOS
                     </div>
@@ -170,11 +184,29 @@ export default function Formacion() {
                             </div>
                             <div className="timeline-end md:mb-10">
                                 <time className="font-mono italic">2007</time>
-                                <div className="text-lg font-black">Curso: Excel Avanzado</div>
-                                <div className="text-sm">Plataforma e-learning</div>
-                                <p className="descripcion_formacion">
-                                    Aprendizaje y ejercicios sobre: Rango,s inserción de objetos, bases de datos, formularios, vistas, estructuras de control, análisis de datos, plantillas, macros y obtención de datos externos.
-                                </p>
+
+
+
+                                <div class="accordion" id="acordeon_excel">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="boton_acordeon_izquierda" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_excel" aria-expanded="true" aria-controls="collapse_excel">
+                                                <p className="titulacion">Curso: Excel Avanzado</p>
+                                                <p>Plataforma E-learning</p>
+                                            </button>
+                                        </h2>
+                                        <div id="collapse_excel" class="accordion-collapse collapse" data-bs-parent="#acordeon_excel">
+                                            <div class="accordion-body">
+                                                <p className="descripcion_formacion">
+                                                    Aprendizaje y ejercicios sobre: Rangos, inserción de objetos, bases de datos, formularios, vistas, estructuras de control, análisis de datos, plantillas, macros y obtención de datos externos.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                             <hr />
                         </li>
@@ -194,21 +226,47 @@ export default function Formacion() {
                                     />
                                 </svg>
                             </div>
+                            {/* // */}
                             <div className="timeline-start mb-10 md:text-end">
-                                <time className="font-mono italic">Junio 2010</time>
-                                <div className="text-lg font-black">Diplomatura: Trabajo Social</div>
-                                <div className="text-sm">Universidad Complutense de Madrid</div>
-                                <p className="descripcion_formacion">
-                                    Estudio y aplicación de métodos para intervenir en problemáticas sociales, promover el bienestar y la justicia social, y fortalecer el desarrollo humano y comunitario. Forma profesionales capaces de diagnosticar, planificar y ejecutar acciones que mejoren las condiciones de vida de individuos, grupos y comunidades.
-                                    Prácticas de carrera en sector de inmigración y asilados.
-                                </p>
+                                <time className="font-mono italic">09/2006 - 06/2010</time>
+                                <div class="accordion" id="acordeon_ts">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="boton_acordeon_derecha" onClick={() => mostrandoAcordeon()} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <p className="titulacion">Diplomatura: Trabajo Social</p>
+                                                <p>Universidad Complutense de Madrid</p>
+                                                {mostrandoContenido ? (
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024"><path fill="currentColor" d="M8.2 751.4c0 8.6 3.4 17.401 10 24.001c13.2 13.2 34.8 13.2 48 0l451.8-451.8l445.2 445.2c13.2 13.2 34.8 13.2 48 0s13.2-34.8 0-48L542 251.401c-13.2-13.2-34.8-13.2-48 0l-475.8 475.8c-6.8 6.8-10 15.4-10 24.2z" /></svg>
 
+                                                    </div>
+                                                ) : (
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024"><path fill="currentColor" d="M8.2 275.4c0-8.6 3.4-17.401 10-24.001c13.2-13.2 34.8-13.2 48 0l451.8 451.8l445.2-445.2c13.2-13.2 34.8-13.2 48 0s13.2 34.8 0 48L542 775.399c-13.2 13.2-34.8 13.2-48 0l-475.8-475.8c-6.8-6.8-10-15.4-10-24.199" /></svg>
+                                                    </div>
+                                                )}
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#acordeon_ts">
+                                            <div class="accordion-body">
+                                                <p className="descripcion_formacion">
+                                                    Estudio y aplicación de métodos para intervenir en problemáticas sociales, promover el bienestar y la justicia social, y fortalecer el desarrollo humano y comunitario. Forma profesionales capaces de diagnosticar, planificar y ejecutar acciones que mejoren las condiciones de vida de individuos, grupos y comunidades.
+                                                    Prácticas de carrera en sector de inmigración y asilados.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <hr />
                         </li>
+
                     </ul>
                 </main>
 
+
             </div>
+
         </div>
 
     )
