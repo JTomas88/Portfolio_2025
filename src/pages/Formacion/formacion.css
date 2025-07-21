@@ -21,6 +21,7 @@
 .titulo_formacion {
   color: #ba3b46;
   font-family: 'Computer-says-no', sans-serif;
+  font-size: clamp(3rem, 8vw, 4rem);
 }
 
 hr {
@@ -33,36 +34,12 @@ hr {
   font-weight: bolder;
 }
 
-.descripcion_formacion {
+.descripcion {
   font-family: 'Computer-says-no', sans-serif;
   font-size: 1.5rem;
   line-height: 1.1;
   text-align: justify;
-}
-
-.boton_acordeon_derecha::after {
-  position: absolute;
-  top: 50%; /* posición vertical base */
-  transform: translateY(-50%);
-  right: 1rem; /* o lo que necesites */
-}
-
-/* Ajuste fino si quieres alinear exactamente con el segundo span */
-#alinear-flecha {
-  position: relative;
-}
-
-.head_acordeon {
-  display: flex;
-  flex-direction: column;
-  text-align: unset;
-  border: none;
-  background-color: transparent;
-}
-
-.boton_acordeon_derecha:focus {
-  box-shadow: none !important;
-  outline: none !important;
+  padding: 0% !important;
 }
 
 .accordion-item {
@@ -70,29 +47,20 @@ hr {
   border: none !important;
 }
 
-.accordion-body {
-  background-color: transparent !important;
-  border: none !important;
-  padding-left: 0 !important;
-}
-
 .boton_acordeon_derecha {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
   outline: none !important;
-  padding-left: 0 !important;
+  padding: 0 !important;
   position: relative;
-
   width: 100%;
-  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
   font-size: 1rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;
-
   overflow-anchor: none;
   transition: var(--bs-accordion-transition);
 }
@@ -105,15 +73,12 @@ hr {
   border: none !important;
   box-shadow: none !important;
   outline: none !important;
-  padding-left: 0 !important;
+  padding: 0 !important;
   position: relative;
-
   width: 100%;
-  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
   font-size: 1rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;
-
   overflow-anchor: none;
   transition: var(--bs-accordion-transition);
 }
@@ -121,6 +86,24 @@ hr {
 @media (max-width: 576px) {
   .formacion_container {
     padding-right: 7%;
+  }
+
+  .boton_acordeon_izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
   }
 }
 
