@@ -108,7 +108,7 @@ export default function Formacion() {
                                                 className="boton_acordeon_derecha"
                                             >
                                                 <span className="titulacion">Curso: Introducción al desarrollo web: HTML y CSS</span>
-                                                <sapn>Google Digital Academy</sapn>
+                                                <span>Google Digital Academy</span>
                                                 {mostrarContenido === "cursoGoogle" ? <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 20 20"><path fill="currentColor" d="m11 7l-4 6h8z" /></svg> : <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 20 20"><path fill="currentColor" d="m15 8l-4.03 6L7 8z" /></svg>}
                                             </button>
                                         </h2>

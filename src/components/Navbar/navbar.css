@@ -17,6 +17,12 @@
   padding-left: 0 !important;
 }
 
+Link,
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
 .bubble_navbar {
   position: relative;
   display: flex;
@@ -72,6 +78,7 @@
 
 .texto_ajustado {
   line-height: 0.7;
+  text-align: center;
 }
 
 .boton:hover {

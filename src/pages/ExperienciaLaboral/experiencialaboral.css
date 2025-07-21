@@ -6,6 +6,7 @@
 .titulo_experiencia {
   color: #ba3b46;
   font-family: 'Computer-says-no', sans-serif;
+  font-size: clamp(3rem, 8vw, 4rem);
 }
 
 .descripcion_experiencia {
@@ -13,4 +14,18 @@
   font-size: 1.5rem;
   line-height: 1.1;
   text-align: justify;
+}
+
+.titulacion {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.descripcion {
+  font-family: 'Computer-says-no', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  text-align: justify;
+  padding: 0% !important;
 }
