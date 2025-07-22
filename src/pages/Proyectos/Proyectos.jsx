@@ -1,7 +1,6 @@
-import React, { useState, useRef } from "react";
-import { useNavigate, } from "react-router-dom";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./proyectos.css";
-import Bubble from "../../components/Bubble_Proyectos/Bubble_Proyectos";
 import Bubble_Proyectos from "../../components/Bubble_Proyectos/Bubble_Proyectos";
 import Navbar from "../../components/Navbar/Navbar";
 
@@ -10,15 +9,30 @@ export default function Proyectos() {
     const proyectosRealizados = [
         {
             nombre: 'Carefy',
-            descripcion: 'Conecta a personas cuidadoras con familias que tienen algún miembro dependiente',
+            descripcion: 'Permite conectar a personas que buscan empleo como cuidadores con familias que tienen algún miembro en situación de dependencia. Dispone de un buscador en ambos sentidos y sistema de puntaje a la persona contratada. Trabajo realizado junto a dos compañeros más y presentado como proyecto final del Bootcamp, elegido como el mejor de su cohorte.',
             fecha_inicio: '08/2024',
             fecha_fin: '09/2024',
-            tecnologías_usadas: 'React, Python',
-            media: ''
-        }
-    ]
+            tecnologías_usadas: 'Frontend: React. Backend: Python. Flask API. Cloudinary. JWT Authentication.',
+            media: [{ urlVideo: 'https://www.youtube.com/embed/uqxDaXIb7z8?si=gWQS_17cCpQWDXfC' }]
+        },
+        {
+            nombre: 'Carefy',
+            descripcion: 'Permite conectar a personas que buscan empleo como cuidadores con familias que tienen algún miembro en situación de dependencia. Dispone de un buscador en ambos sentidos y sistema de puntaje a la persona contratada. Trabajo realizado junto a dos compañeros más y presentado como proyecto final del Bootcamp, elegido como el mejor de su cohorte.',
+            fecha_inicio: '08/2024',
+            fecha_fin: '09/2024',
+            tecnologías_usadas: 'Frontend: React. Backend: Python. Flask API. Cloudinary. JWT Authentication.',
+            media: [{ urlVideo: 'https://www.youtube.com/embed/uqxDaXIb7z8?si=gWQS_17cCpQWDXfC' }]
+        },
+        {
+            nombre: 'Carefy',
+            descripcion: 'Permite conectar a personas que buscan empleo como cuidadores con familias que tienen algún miembro en situación de dependencia. Dispone de un buscador en ambos sentidos y sistema de puntaje a la persona contratada. Trabajo realizado junto a dos compañeros más y presentado como proyecto final del Bootcamp, elegido como el mejor de su cohorte.',
+            fecha_inicio: '08/2024',
+            fecha_fin: '09/2024',
+            tecnologías_usadas: 'Frontend: React. Backend: Python. Flask API. Cloudinary. JWT Authentication.',
+            media: [{ urlVideo: 'https://www.youtube.com/embed/uqxDaXIb7z8?si=gWQS_17cCpQWDXfC' }]
+        },
 
-
+    ];
 
     return (
         <div>
@@ -31,26 +45,29 @@ export default function Proyectos() {
                         PROYECTOS
                     </div>
                 </div>
-                {/* The button to open modal */}
-                <div className="d-flex flex-wrap justify-content-center gap-4">
-                    {proyectosRealizados.map((proyecto, idx) => (
-                        <Bubble_Proyectos
-                            key={idx}
-                            id={idx}
-                            nombre={proyecto.nombre}
-                            descripcion={proyecto.descripcion}
-                            fecha_inicio={proyecto.fecha_inicio}
-                            fecha_fin={proyecto.fecha_fin}
-                            tecnologias={proyecto.tecnologías_usadas}
-                            media={proyecto.media}
-                        />
 
-                    ))}
-
-                </div>
-
+                {proyectosRealizados.map((proyecto, idx) => {
+                    const randomLeft = Math.floor(Math.random() * 60);
+                    return (
+                        <div key={idx} className="relative w-full h-[220px]">
+                            <Bubble_Proyectos
+                                id={idx}
+                                nombre={proyecto.nombre}
+                                descripcion={proyecto.descripcion}
+                                fecha_inicio={proyecto.fecha_inicio}
+                                fecha_fin={proyecto.fecha_fin}
+                                tecnologias={proyecto.tecnologías_usadas}
+                                media={proyecto.media}
+                                style={{
+                                    position: 'absolute',
+                                    left: `${randomLeft}%`,
+                                    top: 0
+                                }}
+                            />
+                        </div>
+                    );
+                })}
             </div>
         </div>
-
-    )
+    );
 }

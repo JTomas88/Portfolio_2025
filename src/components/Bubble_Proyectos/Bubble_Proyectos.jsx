@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate, } from "react-router-dom";
 import "./bubble_proyectos.css";
 
-export default function Bubble_Proyectos({ id, nombre, descripcion, fecha_inicio, fecha_fin, tecnologias, media }) {
+export default function Bubble_Proyectos({ id, nombre, descripcion, fecha_inicio, fecha_fin, tecnologias, media, style }) {
 
     const [isPopped, setIsPopped] = useState(false);
     const [showBubble, setShowBubble] = useState(true);
@@ -46,7 +46,7 @@ export default function Bubble_Proyectos({ id, nombre, descripcion, fecha_inicio
 
 
     return (
-        <div className="relative">
+        <div className="relative" style={style}>
             {showBubble && (
                 <button
                     ref={bubbleRef}
@@ -79,19 +79,24 @@ export default function Bubble_Proyectos({ id, nombre, descripcion, fecha_inicio
 
             {showModal && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white rounded-lg p-6 shadow-lg w-11/12 max-w-md relative">
+                    <div className="bg-white rounded-lg p-6 shadow-lg w-11/12 max-w-md relative modal_proyecto">
                         <h2 className="text-2xl font-bold mb-4">{nombre}</h2>
                         <p>{descripcion}</p>
                         <p><strong>Inicio:</strong> {fecha_inicio}</p>
                         <p><strong>Fin:</strong> {fecha_fin}</p>
                         <p><strong>Tecnologías:</strong> {tecnologias}</p>
-                        {media && <img src={media} alt={nombre} className="w-full mt-4 rounded" />}
-                        <button
+                        {media &&
+                            <div alt={nombre} className="mt-4 rounded d-flex justify-center">
+                                <iframe width="560" height="315" src={media[0].urlVideo} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>}
+                        <button type="button"
                             onClick={closeModal}
-                            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                            className="mt-4 px-4 py-2 boton_modal"
                         >
                             Cerrar
                         </button>
+
                     </div>
                 </div>
             )}

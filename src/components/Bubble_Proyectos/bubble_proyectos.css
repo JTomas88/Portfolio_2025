@@ -216,6 +216,19 @@
   box-shadow: 0 0 8px 0px #b141b9aa;
 }
 
+.modal_proyecto {
+  height: 95%;
+  max-width: 70%;
+  overflow-x: auto;
+}
+
+.boton_modal {
+  background-color: #61c9a8;
+}
+.boton_modal:hover {
+  background-color: #185f49;
+  color: white;
+}
 @keyframes wobble {
   0% {
     border-radius: 44% 52% 44% 50%;
