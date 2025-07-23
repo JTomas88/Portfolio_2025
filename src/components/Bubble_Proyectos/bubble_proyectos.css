@@ -25,6 +25,8 @@
   border-radius: 44% 52% 44% 50%;
   transition: all 0.3s;
   overflow: hidden;
+  animation: wobble 4s linear 1s infinite alternate,
+    floatX 6s ease-in-out infinite;
 }
 
 .bubble:hover {
@@ -43,6 +45,30 @@
   font-size: 30px;
 }
 
+.bubble-text {
+  position: relative;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-family: 'Computer-says-no', sans-serif;
+  color: black;
+  font-size: 3rem !important;
+}
+
+.bubble-text .nombre {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.bubble-text .fecha {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
 .highlight {
   position: absolute;
   top: 12%;
@@ -54,21 +80,6 @@
   background-color: #ffffffdd;
   z-index: 5;
   animation: move 4s linear 1s infinite alternate;
-}
-
-.text {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  left: 50%;
-  height: fit-content;
-  width: 100%;
-  z-index: 6;
-  font-family: 'Computer-says-no', sans-serif;
-  color: black;
-  text-align: center;
-  font-size: 25px;
-  animation: pulse 4s linear 1s infinite alternate;
 }
 
 .purple {
@@ -108,13 +119,28 @@
 }
 
 .container {
-  display: none;
   position: fixed;
   pointer-events: none;
   width: 250px;
   height: 250px;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  z-index: 20;
+}
+
+.container.visible {
+  opacity: 1;
+  visibility: visible;
+  animation: splash 0.2s forwards;
+}
+
+.container.invisible {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .splash {
@@ -217,9 +243,28 @@
 }
 
 .modal_proyecto {
-  height: 95%;
   max-width: 70%;
-  overflow-x: auto;
+  width: 100%;
+  height: auto;
+  max-height: 95vh;
+  overflow-y: auto;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 1rem;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .boton_modal {
@@ -304,5 +349,76 @@
     width: 250px;
     border-radius: 44% 52% 44% 50%;
     font-size: 34px;
+  }
+}
+
+@keyframes floatX {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media (max-width: 576px) {
+  .bubble {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    margin: auto;
+    background-color: #0db34c;
+    height: 120px;
+    width: 178px;
+    opacity: 80%;
+    animation: wobble 4s linear 1s infinite alternate;
+    box-shadow: 0px 0px 5px 0px #1d6d68aa;
+    border: none;
+    border-radius: 44% 52% 44% 50%;
+    transition: all 0.3s;
+    overflow: hidden;
+    animation: wobble 4s linear 1s infinite alternate,
+      floatX 6s ease-in-out infinite;
+  }
+
+  .bubble-text .nombre {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .bubble-text .fecha {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .splash {
+    margin: auto;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-bottom: 1px solid #ffffffcc;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      225deg,
+      #83f2b4 0%,
+      #6fa7e1 60%,
+      #e175e5 100%
+    );
+    z-index: 1;
+  }
+
+  .modal_proyecto {
+    max-width: 90%;
+    width: 203%;
+    height: auto;
+    max-height: 97%;
+    overflow-y: auto;
   }
 }
