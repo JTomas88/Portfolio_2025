@@ -2,6 +2,20 @@
   background-color: #ed9b40 !important;
 }
 
+.navbar_1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* escritorio: todo en fila */
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+  flex-wrap: wrap; /* para que en móvil pueda envolver */
+  gap: 80px; /* espacio entre elementos */
+}
+
 .boton {
   width: 180px;
   display: flex;
@@ -15,6 +29,12 @@
   margin-bottom: 0 !important;
   margin-top: 0 !important;
   padding-left: 0 !important;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 80%;
+  flex-direction: row;
 }
 
 Link,
@@ -109,4 +129,84 @@ a {
 
 .icono_home {
   transition: transform 0.3s ease;
+}
+
+.columna-1,
+.columna-2,
+.columna-3 {
+  display: flex; /* Flexbox para alinear en fila */
+  flex-direction: row; /* Dirección horizontal (fila) */
+  flex-wrap: nowrap; /* Evitar que los elementos salten a otra línea */
+  gap: 140px; /* Espacio entre botones, opcional */
+  align-items: center; /* Alinear verticalmente los elementos en el centro */
+}
+
+@media (max-width: 768px) {
+  /* .cajon_ul {
+    width: 50px;
+    height: 100px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column-reverse;
+  } */
+  .boton {
+    height: 50px;
+    width: 95px;
+
+    font-size: 0.9rem;
+  }
+
+  .navbariconos {
+    width: 25px;
+    height: 25px;
+  }
+
+  .navbar_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cajon_ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto; /* dos filas */
+    gap: 0px;
+  }
+
+  /* Columna 1: dos iconos uno sobre otro */
+  .columna-1 {
+    grid-column: 1;
+    grid-row: 1 / 3; /* ocupa dos filas verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Columna 2: solo icono Home en medio */
+  .columna-2 {
+    grid-column: 2;
+    grid-row: 1 / 3; /* también verticalmente centrado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Columna 3: dos iconos uno sobre otro */
+  .columna-3 {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .columna-1,
+  .columna-2,
+  .columna-3 {
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+  }
 }
