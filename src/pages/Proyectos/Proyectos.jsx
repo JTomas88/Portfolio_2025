@@ -57,7 +57,7 @@ export default function Proyectos() {
                     const maxLeft = screenWidth - bubbleWidth - safeMargin;
                     const randomLeft = Math.floor(Math.random() * maxLeft);
                     return (
-                        <div key={idx} className="relative w-full h-[220px]">
+                        <div key={idx} className="relative h-[220px]">
                             <Bubble_Proyectos
                                 id={idx}
                                 nombre={proyecto.nombre}

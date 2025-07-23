@@ -6,6 +6,7 @@ import { Footer } from './components/Footer/Footer';
 import Formacion from './pages/Formacion/Formacion';
 import ExperienciaLaboral from './pages/ExperienciaLaboral/ExperienciaLaboral'
 import Proyectos from './pages/Proyectos/Proyectos';
+import Tecnologias from './pages/Tecnologias/Tecnologias';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/formacionycursos" element={<Formacion />} />
             <Route path="/experiencialaboral" element={<ExperienciaLaboral />} />
             <Route path="/proyectos" element={<Proyectos />} />
+            <Route path="/tecnologias" element={<Tecnologias />} />
           </Routes>
         </main>
         <Footer />
