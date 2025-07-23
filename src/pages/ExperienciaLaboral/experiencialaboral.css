@@ -29,3 +29,10 @@
   text-align: justify;
   padding: 0% !important;
 }
+
+@media (max-width: 576px) {
+  .experiencia_container {
+    padding-right: 10% !important;
+    overflow-x: hidden;
+  }
+}

@@ -26,7 +26,7 @@ export default function ExperienciaLaboral() {
             <div className="cajon_navbar">
                 <Navbar />
             </div>
-            <div className="w-full min-h-screen experiencia_container flex flex-col">
+            <div className="w-full min-h-screen experiencia_container py-8 flex flex-col">
 
                 <div className="m-3">
                     <div className=" font-bold titulo_formacion text-center">
