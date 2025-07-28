@@ -8,7 +8,7 @@
           "value": "www.jtomas.info"
         }
       ],
-      "destination": "https://jtomas.info/:1",
+      "destination": "https://jtomas.info/$1",
       "permanent": true
     }
   ]
