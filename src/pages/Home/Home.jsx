@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import { useNavigate, } from "react-router-dom";
 import fotoPerfil from '../../assets/fotoPerfil.png'
+import logo from "../../assets/logo.png"
 import "./home.css";
 import Bubble_Home from '../../components/Bubble_Home/Bubble_Home'
 
@@ -14,6 +15,9 @@ export default function Home() {
             <div className="text-center">
                 <h1 className="titulo" >Juan Tomás Poves</h1>
                 <h3 className="subtitulo">Fullstack developer</h3>
+            </div>
+            <div className="logo">
+                <img src={logo} ></img>
             </div>
             <div className="flex justify-center">
                 <div >

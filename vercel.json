@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.jtomas.info"
+        }
+      ],
+      "destination": "https://jtomas.info/:1",
+      "permanent": true
+    }
+  ]
+}

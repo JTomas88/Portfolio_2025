@@ -14,6 +14,13 @@
   border-radius: 80%;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: auto;
+}
+
 .home_container {
   background-color: #ed9b40;
   width: 100%;
