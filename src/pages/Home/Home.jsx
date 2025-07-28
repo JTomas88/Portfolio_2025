@@ -14,11 +14,12 @@ export default function Home() {
         <div className="w-full min-h-screen text-center home_container py-8 flex flex-col">
             <div className="text-center">
                 <h1 className="titulo" >Juan Tomás Poves</h1>
-                <h3 className="subtitulo">Fullstack developer</h3>
             </div>
-            <div className="logo">
-                <img src={logo} ></img>
+            <div className="flex justify-center items-center w-full py-6">
+                <img src={logo} alt="Logo" className="w-[300px] max-w-full h-auto" />
             </div>
+
+
             <div className="flex justify-center">
                 <div >
                     <img

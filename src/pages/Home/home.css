@@ -16,9 +16,17 @@
 
 .logo {
   display: flex;
-  align-items: center;
-  width: 20%;
-  height: auto;
+  justify-content: center; /* ✅ centra horizontalmente */
+  align-items: center; /* opcional: centra verticalmente dentro del contenedor */
+  width: 100%;
+  padding: 20px 0;
+}
+
+.logo-img {
+  display: block;
+  width: 300px; /* ✅ modifica este valor para cambiar el tamaño */
+  height: auto; /* mantiene la proporción original */
+  max-width: 100%;
 }
 
 .home_container {
