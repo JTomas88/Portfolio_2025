@@ -11,5 +11,11 @@
       "destination": "https://jtomas.info/$1",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!.*\\..*).*)",
+      "destination": "/"
+    }
   ]
 }
