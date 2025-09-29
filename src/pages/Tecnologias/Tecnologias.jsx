@@ -13,6 +13,10 @@ import { LuFileCode2 } from "react-icons/lu";
 import { FaLaptopCode } from "react-icons/fa6";
 import { FaGooglePlus } from "react-icons/fa6";
 import { FaAngular } from "react-icons/fa";
+import { IoLogoVue } from "react-icons/io5";
+import { SiPhp } from "react-icons/si";
+import { IoLogoDocker } from "react-icons/io5";
+
 
 
 export default function Tecnologias() {
@@ -51,6 +55,7 @@ export default function Tecnologias() {
                         </div>
                         <div className="col">
                             <div className="icon-item"><FaAngular size={40} /><p>Angular</p></div>
+                            <div className="icon-item"><IoLogoVue size={40} /><p>Vue</p></div>
 
                         </div>
                     </div>
@@ -64,6 +69,7 @@ export default function Tecnologias() {
                             <div className="icon-item"><FaPython size={40} /><p>Python</p></div>
                             <div className="icon-item"><SiFlask size={40} /><p>Flask</p></div>
                             <div className="icon-item"><TbApi size={40} /><p>APIs</p></div>
+                            <div className="icon-item"><SiPhp size={40} /><p>PHP</p></div>
                         </div>
                         <div className="col">
                             <div className="icon-item"><TbSql size={40} /><p>SQL</p></div>
@@ -83,6 +89,7 @@ export default function Tecnologias() {
                             <div className="icon-item"><FaMarkdown size={40} /><p>Markdown</p></div>
                             <div className="icon-item"><IoPeople size={40} /><p>User Stories</p></div>
                             <div className="icon-item"><MdHttp size={40} /><p>REST</p></div>
+                            <div className="icon-item"><IoLogoDocker size={40} /><p>Docker</p></div>
                         </div>
                         <div className="col">
                             <div className="icon-item"><FaLaptopCode size={40} /><p>DOM</p></div>
