@@ -55,9 +55,9 @@ export default function ExperienciaLaboral() {
                                 <div className="text-lg font-black">Findspo</div>
                                 <div className="text-sm">Full Stack Developer</div>
                                 <p className="descripcion_experiencia">
-                                    Diseño, desarrollo y mantenimiento de aplicaciones web, tanto del lado del cliente como del servidor.
+                                    Desarrollo y mantenimiento de aplicaciones web, tanto del lado del cliente como del servidor.
                                     Diseño de interfaces de usuario, construcción y mantenimiento de API's, gestión de bases de datos, integración y despliegue de proyectos, optimización de rendimientos, accesibilidad y seguridad.<br></br>
-                                    Tecnologías: Vue (front) / PhP (Back)
+                                    Tecnologías: Vue (front) / Tailwind / PhP (Back)
 
                                 </p>
                             </div>
@@ -119,7 +119,9 @@ export default function ExperienciaLaboral() {
                         </li>
                     </ul>
                 </main>
+
             </div>
+
 
         </div>
 
