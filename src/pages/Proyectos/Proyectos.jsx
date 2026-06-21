@@ -8,7 +8,7 @@ export default function Proyectos() {
 
     const proyectosRealizados = [
         {
-            nombre: 'PrideRide',
+            nombre: 'GoGuay',
             descripcion: 'Web-App que permite compartir coche entre usuarios para viajes de media-larga distancia. Está dirigida al colectivo LGTBIQ+ con el objetivo de realizar viajes seguros entre sus pasajeros, aunque será una aplicación abierta a todo el mundo sin diferencias roles o preferencias sexuales',
             url: '',
             fecha_inicio: '01/2025',

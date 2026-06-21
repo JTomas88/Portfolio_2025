@@ -84,14 +84,13 @@ export default function Formacion() {
                 <Navbar />
             </div>
 
-            <div className="row">
+            <div className="flex flex-wrap">
                 {/* Formación developer */}
-                <div className="w-full min-h-screen formacion_container py-8 flex flex-col col-6">
-                    <div className="m-3">
-                        <div className="font-bold titulo_formacion text-center">
-                            FORMACIÓN DEVELOPER
-                        </div>
+                <div className="w-full md:w-1/2 min-h-screen formacion_container py-8 flex flex-col">                    <div className="m-3">
+                    <div className="font-bold titulo_formacion text-center">
+                        FORMACIÓN DEVELOPER
                     </div>
+                </div>
 
                     <main>
                         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -162,12 +161,11 @@ export default function Formacion() {
                     </main>
                 </div>
                 {/* Otras formaciones */}
-                <div className="w-full min-h-screen formacion_container py-8 flex flex-col col-6">
-                    <div className="m-3">
-                        <div className="font-bold titulo_formacion text-center">
-                            OTRAS FORMACIONES
-                        </div>
+                <div className="w-full md:w-1/2 min-h-screen formacion_container py-8 flex flex-col">                    <div className="m-3">
+                    <div className="font-bold titulo_formacion text-center">
+                        OTRAS FORMACIONES
                     </div>
+                </div>
 
                     <main>
                         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
