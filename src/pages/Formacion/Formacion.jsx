@@ -85,6 +85,7 @@ export default function Formacion() {
             </div>
 
             <div className="row">
+                {/* Formación developer */}
                 <div className="w-full min-h-screen formacion_container py-8 flex flex-col col-6">
                     <div className="m-3">
                         <div className="font-bold titulo_formacion text-center">
@@ -160,10 +161,11 @@ export default function Formacion() {
                         </ul>
                     </main>
                 </div>
+                {/* Otras formaciones */}
                 <div className="w-full min-h-screen formacion_container py-8 flex flex-col col-6">
                     <div className="m-3">
                         <div className="font-bold titulo_formacion text-center">
-                            FORMACIÓN DEVELOPER
+                            OTRAS FORMACIONES
                         </div>
                     </div>
 
