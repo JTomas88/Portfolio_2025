@@ -7,25 +7,37 @@ import Formacion from './pages/Formacion/Formacion';
 import ExperienciaLaboral from './pages/ExperienciaLaboral/ExperienciaLaboral'
 import Proyectos from './pages/Proyectos/Proyectos';
 import Tecnologias from './pages/Tecnologias/Tecnologias';
+import Mantenimiento from './pages/Mantenimiento/Mantenimiento'
 
 function App() {
 
 
   return (
+    // <BrowserRouter>
+    //   <div className="flex flex-col min-h-screen">
+    //     <main className="flex-grow">
+    //       <Routes>
+    //         <Route path="/" element={<Home />} />
+    //         <Route path="/formacionycursos" element={<Formacion />} />
+    //         <Route path="/experiencialaboral" element={<ExperienciaLaboral />} />
+    //         <Route path="/proyectos" element={<Proyectos />} />
+    //         <Route path="/tecnologias" element={<Tecnologias />} />
+    //       </Routes>
+    //     </main>
+    //     <Footer />
+    //   </div>
+    // </BrowserRouter>
     <BrowserRouter>
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/formacionycursos" element={<Formacion />} />
-            <Route path="/experiencialaboral" element={<ExperienciaLaboral />} />
-            <Route path="/proyectos" element={<Proyectos />} />
-            <Route path="/tecnologias" element={<Tecnologias />} />
+
+            <Route path="*" element={<Mantenimiento />} />
           </Routes>
         </main>
-        <Footer />
       </div>
     </BrowserRouter>
+
   );
 }
 
